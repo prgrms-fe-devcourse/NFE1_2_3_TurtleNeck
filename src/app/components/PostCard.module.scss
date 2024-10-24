@@ -1,0 +1,89 @@
+.post_card {
+    border: 1px solid red;
+    display: flex;
+    width: 300px;
+    padding: 16px var(--spacing-2xl, 20px);
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 21px;
+    border-radius: var(--radius-xxs, 2px);
+}
+
+.post_card_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.post_card_category {
+    color: var(--Teal-950, var(--Colors-Teal-950, #0A2926));
+    font-family: Pretendard;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 80%;
+    /* 9.6px */
+    letter-spacing: -0.264px;
+}
+
+.post_card_date {
+    color: var(--Teal-950, var(--Colors-Teal-950, #0A2926));
+    font-variant-numeric: slashed-zero;
+    font-feature-settings: 'ss05' on, 'ss07' on;
+    font-family: Pretendard;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 80%;
+    /* 9.6px */
+    letter-spacing: -0.264px;
+}
+
+.post_card_image {
+    height: 186px;
+    width: calc(300px - (--spacing-2xl));
+    object-fit: cover;
+    background: lightgray 50% / cover no-repeat;
+}
+
+.post_card_title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    align-self: stretch;
+    overflow: hidden;
+    color: #000;
+    font-feature-settings: 'ss05' on;
+    text-overflow: ellipsis;
+    font-family: Pretendard;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.506px;
+    word-break: keep-all;
+}
+
+.post_card_tags {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    align-self: stretch;
+}
+
+.post_card_tag {
+    display: flex;
+    padding: var(--spacing-none, 0px) 6px;
+    align-items: center;
+    border-radius: var(--radius-xxs, 2px);
+    border: 1px dashed rgba(10, 41, 38, 0.30);
+    color: var(--Teal-950, var(--Colors-Teal-950, #0A2926));
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--Line-height-text-sm, 20px);
+    /* 181.818% */
+}

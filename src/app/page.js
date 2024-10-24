@@ -1,10 +1,13 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+// import Image from "next/image";
+import PostCardsList from "./components/PostCard";
+// import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
+    // <div className={styles.page}>
+    <div>
+      <PostCardsList />
+      {/* <main className={styles.main}>
         <Image
           className={styles.logo}
           src="https://nextjs.org/icons/next.svg"
@@ -89,7 +92,7 @@ export default function Home() {
           />
           Go to nextjs.org →
         </a>
-      </footer>
+      </footer> */}
     </div>
   );
 }
